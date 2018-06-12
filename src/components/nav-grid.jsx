@@ -4,6 +4,7 @@ class NavGrid extends Component {
     render(){
         return (
             <nav className="nav">
+                
 
             </nav>
         )
