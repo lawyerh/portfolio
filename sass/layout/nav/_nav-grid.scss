@@ -17,14 +17,6 @@
         border: .1rem solid $color-less-dark;
     }
 
-    &__display {
-        width: 70%;   
-        height: 100%;
-        background: linear-gradient(-18deg, $color-primary, $color-primary-dark);
-        border-right: 1.2rem solid $color-dark;
-        display: inline-block;
-    }
-
     &__selections {
         width: 30%;
         height: 100%;

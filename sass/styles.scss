@@ -1,6 +1,9 @@
-@import "base/base";
-@import "base/mixins";
-@import "base/typography";
 @import "base/variables";
+@import "base/mixins";
+@import "base/base";
+@import "base/typography";
 
-@import "layout/all";
+@import "layout/grid";
+@import "layout/nav/nav-grid";
+
+@import "pages/about";

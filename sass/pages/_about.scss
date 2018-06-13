@@ -1,0 +1,70 @@
+.about-display {
+    width: 70%;   
+    height: 100%;
+    background: linear-gradient(-18deg, $color-primary, $color-primary-dark);
+    border-right: 1.2rem solid $color-dark;
+    display: inline-block;
+    position: relative;
+
+
+    &__header {
+        text-align: center;
+        margin-top: 5rem;
+    }
+
+    &__title {
+        text-align: center;
+        margin-top: 1rem;
+    }
+
+    &__info {
+        margin-top: 6rem;
+        padding: 3rem;
+    }
+
+    &__about {
+        width: 70%;
+        display: inline-block;
+    }
+
+    &__img-box {
+        position: relative;
+        float: left;
+        width: 25rem;
+        height: 25rem;
+        -webkit-shape-outside: circle(50% at 50% 50%); 
+        shape-outside: circle(50% at 50% 50%);
+
+        -webkit-clip-path: circle(50% at 50% 50%);
+        clip-path: circle(50% at 50% 50%);
+
+        
+    }
+
+    &__img {
+        height: 32rem;
+        backface-visibility: hidden;
+        transform: translate(-30%, -10%) scale(.8);
+    }
+
+    &__text {
+        transform: translateX(5%);
+        vertical-align: top;
+    }
+
+    &__logos {
+        display: inline-block;
+        padding: 2rem;
+        padding-left: 8rem;
+        vertical-align: top;
+    }
+
+    &__logo {
+        display: block;
+        font-size: 4rem;
+        color: $color-white;
+        cursor: pointer;
+        margin: 3rem;
+    }
+
+}
