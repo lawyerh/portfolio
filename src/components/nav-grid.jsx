@@ -1,12 +1,35 @@
 import React, { Component } from "react";
+import { Link } from "react-router-dom";
 
 class NavGrid extends Component {
     render(){
         return (
-            <nav className="nav">
-                
+            <div className="nav__selections">
+                <div className="nav__option-group">
+                    <Link to="/" className="nav__navigation-option nav__navigation-option--header">
+                        <h2 className="nav__option-text">Lawyer Helbling</h2>
+                    </Link>
+                </div>
 
-            </nav>
+                <div className="nav__option-group">
+                    <Link to="/" className="nav__navigation-option nav__navigation-option--left">
+                        <h2 className="nav__option-text">Projects</h2>
+                    </Link>
+                    <Link to="/" className="nav__navigation-option nav__navigation-option--right">
+                        <h2 className="nav__option-text">Contact</h2>
+                    </Link>
+                </div>
+
+                <div className="nav__option-group">
+                    <Link to="/" className="nav__navigation-option nav__navigation-option--left">
+                        <h2 className="nav__option-text">Technologies</h2>
+                    </Link>
+                    <Link to="/" className="nav__navigation-option nav__navigation-option--right">
+                        <h2 className="nav__option-text">Resume</h2>
+                    </Link>
+                </div>
+
+            </div>
         )
     }
 }

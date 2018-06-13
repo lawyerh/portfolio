@@ -1,4 +1,11 @@
 $color-dark: #131313;
+$color-less-dark: lighten($color-dark, 6%);
+
+$color-white: darken(#fff, 25%);
+
+$color-primary: #320d59;
+$color-primary-light: lighten($color-primary, 5%);
+$color-primary-dark: darken($color-primary, 8%);
 
 //Grid Variables
 $grid-width: 114rem;

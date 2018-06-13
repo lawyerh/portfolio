@@ -11,11 +11,13 @@ html {
 body {
   box-sizing: border-box; }
   body p {
-    font-family: 'Open Sans';
+    font-family: 'Karla';
     font-weight: 400;
     font-size: 1.125rem;
     line-height: 2rem;
     color: #333; }
+  body h1, body h2, body h3, body h4, body h5, body h6 {
+    font-family: "Josefin Sans"; }
 
 /*
 
@@ -33,9 +35,66 @@ Breakpoint choices:
 */
 .nav {
   padding: 10rem;
-  height: 80vh;
+  height: 100vh;
   width: 100%;
-  background-color: #131313; }
+  background-color: #131313;
+  position: relative; }
+  .nav__background {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    height: 80%;
+    width: 85%;
+    border-radius: 1.5rem;
+    overflow: hidden;
+    border: 0.1rem solid #222222; }
+  .nav__display {
+    width: 70%;
+    height: 100%;
+    background: linear-gradient(-18deg, #320d59, #1e0835);
+    border-right: 1.2rem solid #131313;
+    display: inline-block; }
+  .nav__selections {
+    width: 30%;
+    height: 100%;
+    background: linear-gradient(18deg, #320d59, #1e0835);
+    display: inline-block;
+    vertical-align: top;
+    padding: 1rem; }
+  .nav__option-group {
+    width: 100%;
+    height: 33%; }
+    .nav__option-group:not(:last-child) {
+      border-bottom: 1px solid #131313; }
+  .nav__navigation-option {
+    position: relative;
+    display: inline-block;
+    width: 48%;
+    height: 100%;
+    padding: 1rem;
+    cursor: pointer;
+    font-size: 2rem;
+    transition: all .2s; }
+    .nav__navigation-option:link, .nav__navigation-option:visited {
+      background: transparent; }
+    .nav__navigation-option--left {
+      border-right: 1px solid #131313;
+      margin-right: .2rem; }
+    .nav__navigation-option--right {
+      border-left: 1px solid #131313; }
+    .nav__navigation-option--header {
+      width: 100%; }
+    .nav__navigation-option:hover {
+      background-color: rgba(19, 19, 19, 0.3);
+      font-size: 2.2rem; }
+  .nav__option-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: inherit;
+    color: #bfbfbf; }
 
 .row {
   max-width: 114rem;

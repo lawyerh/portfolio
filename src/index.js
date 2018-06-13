@@ -7,7 +7,7 @@ import promise from "redux-promise";
 
 import './master.css';
 
-import NavGrid from "./components/nav-grid";
+import About from "./components/about";
 
 const createStoreWithMiddleware = applyMiddleware(promise)(createStore);
 
@@ -17,7 +17,7 @@ ReactDOM.render(
         <div>
             <BrowserRouter>
                 <Switch>
-                    <Route path="/" component={NavGrid} />
+                    <Route path="/" component={About} />
                 </Switch>
             </BrowserRouter>
         </div>
