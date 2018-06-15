@@ -34,7 +34,7 @@ Breakpoint choices:
     }
 
     @if $breakpoint == tab-land {
-        @media (max-width: 75em) {@content}; // 75em == 1200px
+        @media (max-width: 65em) {@content}; // 75em == 1200px
     }
 
     @if $breakpoint == big-desktop {

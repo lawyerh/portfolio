@@ -15,12 +15,14 @@ class About extends Component {
                 <nav className="nav">
                     <div className="nav__background">
                         <div className="about-display">
-                            <h1 className="about-display__header">
-                                Lawyer Helbling
-                            </h1>
-                            <h3 className="about-display__title">
-                                Full Stack Software Developer
-                            </h3>
+                            <div className="about-display__header-background">
+                                <h1 className="about-display__header">
+                                    Lawyer Helbling
+                                </h1>
+                                <h3 className="about-display__title">
+                                    Full Stack Software Developer
+                                </h3>
+                            </div>
 
                             <div className="about-display__logos">
                                 <a href="https://github.com/lawyerh" className="about-display__logo">
@@ -34,9 +36,6 @@ class About extends Component {
 
                             <div className="about-display__info">
                                 <div className="about-display__about">
-                                    <figure className="about-display__img-box">
-                                        <img src={Seattle} alt="Seattle" className="about-display__img"/>
-                                    </figure>
                                     <p className="about-display__text">
                                         I am a Seattle native recently turned software developer that is fascinated with building things and loves to collaborate.
                                     </p>
@@ -46,7 +45,7 @@ class About extends Component {
                                     </p>
 
                                     <p className="about-display__text">
-                                        <strong>Thank you for viewing my portfolio</strong>
+                                        <strong>Thank you for viewing my portfolio!</strong>
                                     </p>
                                 </div>
                             </div>
