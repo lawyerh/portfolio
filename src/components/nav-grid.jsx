@@ -21,7 +21,7 @@ class NavGrid extends Component {
                 </div>
 
                 <div className="nav__option-group">
-                    <Link to="/" className="nav__navigation-option nav__navigation-option--left">
+                    <Link to="/tech" className="nav__navigation-option nav__navigation-option--left">
                         <h2 className="nav__option-text">Technologies</h2>
                     </Link>
                     <Link to="/" className="nav__navigation-option nav__navigation-option--right">

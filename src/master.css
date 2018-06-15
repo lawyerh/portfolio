@@ -26,7 +26,7 @@ html {
       font-size: 56.25%; } }
   @media (max-width: 56.25em) {
     html {
-      font-size: 50%; } }
+      font-size: 40%; } }
   @media (max-width: 37.5em) {
     html {
       font-size: 37.5%; } }
@@ -92,8 +92,11 @@ body {
     height: 80%;
     width: 85%;
     border-radius: 1.5rem;
-    overflow: hidden;
-    border: 0.1rem solid #222222; }
+    overflow: hidden; }
+    @media (max-width: 56.25em) {
+      .nav__background {
+        width: 100%;
+        height: 100%; } }
   .nav__selections {
     width: 30%;
     height: 100%;
@@ -101,6 +104,9 @@ body {
     display: inline-block;
     vertical-align: top;
     padding: 1rem; }
+    @media (max-width: 56.25em) {
+      .nav__selections {
+        display: none; } }
   .nav__option-group {
     width: 100%;
     height: 33%; }
@@ -111,7 +117,6 @@ body {
     display: inline-block;
     width: 48%;
     height: 100%;
-    padding: 1rem;
     cursor: pointer;
     font-size: 2rem;
     transition: all .2s; }
@@ -122,11 +127,13 @@ body {
       margin-right: .2rem; }
     .nav__navigation-option--right {
       border-left: 1px solid #131313; }
-    .nav__navigation-option--header {
-      width: 100%; }
     .nav__navigation-option:hover {
       background-color: rgba(19, 19, 19, 0.3);
       font-size: 2.2rem; }
+    .nav__navigation-option--header {
+      width: 100%; }
+      .nav__navigation-option--header:hover {
+        font-size: 2.1rem; }
   .nav__option-text {
     position: absolute;
     top: 50%;
@@ -135,6 +142,41 @@ body {
     font-size: inherit;
     color: #bfbfbf; }
 
+.navbar {
+  z-index: 1000;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: #320d59;
+  border-radius: 3px;
+  padding: .5rem;
+  display: none;
+  text-align: center; }
+  @media (max-width: 56.25em) {
+    .navbar {
+      display: block; } }
+  .navbar__brand {
+    display: inline-block;
+    color: #bfbfbf; }
+    @media (max-width: 37.5em) {
+      .navbar__brand {
+        display: block;
+        margin: 1rem; } }
+  .navbar__link {
+    display: inline-block;
+    text-decoration: none;
+    font-family: 'Karla';
+    margin-left: 3rem; }
+    @media (max-width: 37.5em) {
+      .navbar__link {
+        margin-left: 1.8rem; } }
+    .navbar__link:link, .navbar__link:visited {
+      color: #bfbfbf;
+      font-size: 3rem; }
+    .navbar__link:hover, .navbar__link:active {
+      color: #ff8832; }
+
 .about-display {
   width: 70%;
   height: 100%;
@@ -142,42 +184,133 @@ body {
   border-right: 1.2rem solid #131313;
   display: inline-block;
   position: relative; }
+  @media (max-width: 56.25em) {
+    .about-display {
+      width: 100%;
+      border: none; } }
   .about-display__header {
     text-align: center;
     margin-top: 5rem; }
+    @media (max-width: 56.25em) {
+      .about-display__header {
+        margin-top: 15rem; } }
   .about-display__title {
     text-align: center;
     margin-top: 1rem; }
   .about-display__info {
-    margin-top: 6rem;
-    padding: 3rem; }
+    padding: 0 5rem; }
+    @media (min-width: 112.5em) {
+      .about-display__info {
+        margin-top: 10rem; } }
   .about-display__about {
-    width: 70%;
-    display: inline-block; }
+    width: 100%; }
+    @media (max-width: 56.25em) {
+      .about-display__about {
+        text-align: center;
+        font-size: 10rem; } }
   .about-display__img-box {
     position: relative;
     float: left;
+    margin: auto;
     width: 25rem;
     height: 25rem;
     -webkit-shape-outside: circle(50% at 50% 50%);
     shape-outside: circle(50% at 50% 50%);
     -webkit-clip-path: circle(50% at 50% 50%);
     clip-path: circle(50% at 50% 50%); }
+    @media (max-width: 56.25em) {
+      .about-display__img-box {
+        margin: auto;
+        float: none;
+        -webkit-shape-outside: none;
+        shape-outside: none;
+        -webkit-clip-path: none;
+        clip-path: none; } }
   .about-display__img {
     height: 32rem;
     backface-visibility: hidden;
     transform: translate(-30%, -10%) scale(0.8); }
   .about-display__text {
+    margin-top: 3rem;
     transform: translateX(5%);
     vertical-align: top; }
+    @media (max-width: 56.25em) {
+      .about-display__text {
+        font-size: 2rem;
+        line-height: 4rem;
+        transform: translateX(0); } }
   .about-display__logos {
-    display: inline-block;
-    padding: 2rem;
-    padding-left: 8rem;
+    text-align: center;
     vertical-align: top; }
   .about-display__logo {
-    display: block;
+    display: inline-block;
     font-size: 4rem;
     color: #bfbfbf;
     cursor: pointer;
-    margin: 3rem; }
+    margin: 1rem 3rem; }
+
+.tech-display {
+  width: 70%;
+  height: 100%;
+  border-right: 1.2rem solid #131313;
+  display: inline-block;
+  position: relative; }
+  @media (max-width: 56.25em) {
+    .tech-display {
+      width: 100%;
+      border: none; } }
+  .tech-display__tech-box {
+    position: relative;
+    height: 33%;
+    width: 100%; }
+    .tech-display__tech-box--1 {
+      background-color: #ff8832; }
+    .tech-display__tech-box--2 {
+      background: linear-gradient(to right bottom, #3f106f, #1e0835); }
+    .tech-display__tech-box--3 {
+      background-color: #0838bd; }
+  .tech-display__javascript {
+    width: 100%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%); }
+  .tech-display__csharp {
+    width: 100%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%); }
+  .tech-display__other {
+    width: 100%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%); }
+  .tech-display__image-box {
+    display: inline-block;
+    text-align: center;
+    width: 19%;
+    max-height: 10%;
+    padding: 0 2rem;
+    transition: all .1s; }
+    .tech-display__image-box--bottom {
+      vertical-align: top; }
+    .tech-display__image-box:hover {
+      background: rgba(19, 19, 19, 0.2); }
+  .tech-display__image {
+    height: 7rem;
+    margin-top: 1rem; }
+    @media (max-width: 56.25em) {
+      .tech-display__image {
+        height: 4.5rem; } }
+  .tech-display__title {
+    border-bottom: 1px solid black;
+    color: #131313;
+    margin-top: .5rem;
+    font-weight: 700; }
+    .tech-display__title--light {
+      color: #bfbfbf;
+      border-bottom: 1px solid #bfbfbf;
+      margin-top: .5rem;
+      font-weight: 700; }
