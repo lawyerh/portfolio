@@ -13,10 +13,11 @@
 
     &__header-background {
         // background-image: url("./img/seattle.jpg");
-        background-image: linear-gradient(to right, rgba($color-dark, .3), rgba($color-dark, .3)), url("./img/seattle.jpg");
+        background-image: linear-gradient(to right, rgba($color-dark, .2), rgba($color-dark, .2)), url("./img/seattle.jpg");
         background-size: cover;
         background-position-y: center;
         padding: 10rem;
+        border-bottom: .6rem solid $color-dark;
         
 
         @include respond(tab-land) {

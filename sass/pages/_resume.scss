@@ -1,0 +1,43 @@
+.resume {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    background-color: $color-dark;
+    padding: 6rem 3rem;
+
+    &__back {
+        position: absolute;
+        top: 5%;
+        left: 5%;
+        text-decoration: none;
+        height: 5rem;
+        width: 5rem;
+        border-radius: 50%;
+        background-color: $color-primary;
+        color: $color-white;
+        text-align: center;
+
+        @include respond(tab-port){
+            display: none;
+        }
+    }
+
+    &__back-arrow {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        font-size: 2rem;
+        font-weight: 700;
+        transition: all .2s;
+
+        &:hover{
+            transform: translate(-50%, -50%) scale(1.25);
+        }
+    }
+
+    &__pdf {
+        width: 100%;
+        height: 100%;
+    }
+}

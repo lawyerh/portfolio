@@ -9,6 +9,7 @@ import './master.css';
 
 import About from "./components/about";
 import Technologies from "./components/tech";
+import Resume from "./components/resume";
 
 const createStoreWithMiddleware = applyMiddleware(promise)(createStore);
 
@@ -19,6 +20,7 @@ ReactDOM.render(
             <BrowserRouter>
                 <Switch>
                     <Route path="/tech" component={Technologies} />
+                    <Route path="/resume" component={Resume} />
                     <Route path="/" component={About} />
                 </Switch>
             </BrowserRouter>
