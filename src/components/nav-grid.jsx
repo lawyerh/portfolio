@@ -15,7 +15,7 @@ class NavGrid extends Component {
                     <Link to="/" className="nav__navigation-option nav__navigation-option--left">
                         <h2 className="nav__option-text">Projects</h2>
                     </Link>
-                    <Link to="/" className="nav__navigation-option nav__navigation-option--right">
+                    <Link to="/contact" className="nav__navigation-option nav__navigation-option--right">
                         <h2 className="nav__option-text">Contact</h2>
                     </Link>
                 </div>

@@ -1,0 +1,32 @@
+.form {
+
+    // &__group {
+        
+    // }
+
+    &__text {
+        font-family: "Karla";
+        width: 50%;
+        border-radius: .5rem;
+        padding: 1rem;
+        box-shadow: 0 1rem 2rem rgba($color-dark, .2);
+    }
+
+    &__text-area {
+        font-family: "Karla";
+        width: 50%;
+        padding: 1rem;
+        border-radius: .5rem;
+        box-shadow: 0 1rem 2rem rgba($color-dark, .2);
+        height: 10rem;
+    }
+
+    &__placeholder {
+        display: block;
+        color: $color-white;
+        font-size: 1.6rem;
+        margin: 1rem;
+    }
+
+    
+}

@@ -52,6 +52,27 @@ body {
   body h3 {
     font-size: 2.8rem; }
 
+.form__text {
+  font-family: "Karla";
+  width: 50%;
+  border-radius: .5rem;
+  padding: 1rem;
+  box-shadow: 0 1rem 2rem rgba(19, 19, 19, 0.2); }
+
+.form__text-area {
+  font-family: "Karla";
+  width: 50%;
+  padding: 1rem;
+  border-radius: .5rem;
+  box-shadow: 0 1rem 2rem rgba(19, 19, 19, 0.2);
+  height: 10rem; }
+
+.form__placeholder {
+  display: block;
+  color: #bfbfbf;
+  font-size: 1.6rem;
+  margin: 1rem; }
+
 .row {
   max-width: 114rem;
   margin: 0 auto; }
@@ -100,7 +121,7 @@ body {
   .nav__selections {
     width: 30%;
     height: 100%;
-    background: linear-gradient(18deg, #320d59, #1e0835);
+    background: linear-gradient(18deg, #003d74, #00284b);
     display: inline-block;
     vertical-align: top;
     padding: 1rem; }
@@ -140,6 +161,8 @@ body {
     left: 50%;
     transform: translate(-50%, -50%);
     font-size: inherit;
+    width: 100%;
+    text-align: center;
     color: #bfbfbf; }
 
 .navbar {
@@ -148,8 +171,9 @@ body {
   top: 0;
   left: 0;
   width: 100%;
-  background-color: #320d59;
+  background-color: #003d74;
   border-radius: 3px;
+  border-bottom: 1px dashed #131313;
   padding: .5rem;
   display: none;
   text-align: center; }
@@ -180,7 +204,7 @@ body {
 .about-display {
   width: 70%;
   height: 100%;
-  background: linear-gradient(-18deg, #320d59, #1e0835);
+  background: linear-gradient(-18deg, #003d74, #00284b);
   border-right: 1.2rem solid #131313;
   display: inline-block;
   position: relative; }
@@ -192,17 +216,25 @@ body {
     background-image: linear-gradient(to right, rgba(19, 19, 19, 0.2), rgba(19, 19, 19, 0.2)), url("./img/seattle.jpg");
     background-size: cover;
     background-position-y: center;
-    padding: 10rem;
-    border-bottom: 0.6rem solid #131313; }
+    padding: 10rem 0;
+    border-bottom: 0.6rem solid #131313;
+    height: 50%;
+    position: relative; }
     @media (max-width: 75em) {
       .about-display__header-background {
         background-position-y: top; } }
   .about-display__header {
-    text-align: center;
-    margin-top: 5rem; }
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%); }
   .about-display__title {
-    text-align: center;
-    margin-top: 1rem; }
+    position: absolute;
+    top: 70%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100%;
+    text-align: center; }
   .about-display__info {
     padding: 0 5rem; }
     @media (min-width: 112.5em) {
@@ -233,6 +265,26 @@ body {
     cursor: pointer;
     margin: 1rem 3rem; }
 
+.contact__display {
+  width: 70%;
+  height: 100%;
+  background-color: #003d74;
+  display: inline-block;
+  border-right: 1.2rem solid #131313;
+  text-align: center;
+  padding: 5rem 0; }
+  @media (max-width: 56.25em) {
+    .contact__display {
+      width: 100%;
+      border: none;
+      padding: 8rem 0 5rem 0; } }
+  @media (max-width: 37.5em) {
+    .contact__display {
+      padding: 12rem 0 5rem 0; } }
+
+.contact__header {
+  margin-bottom: 2rem; }
+
 .resume {
   position: relative;
   width: 100%;
@@ -247,7 +299,7 @@ body {
     height: 5rem;
     width: 5rem;
     border-radius: 50%;
-    background-color: #320d59;
+    background-color: #003d74;
     color: #bfbfbf;
     text-align: center; }
     @media (max-width: 56.25em) {
@@ -284,7 +336,7 @@ body {
     .tech-display__tech-box--1 {
       background-color: #ff8832; }
     .tech-display__tech-box--2 {
-      background: linear-gradient(to right bottom, #3f106f, #1e0835); }
+      background: linear-gradient(to right bottom, #004a8e, #00284b); }
     .tech-display__tech-box--3 {
       background-color: #0838bd; }
   .tech-display__javascript {

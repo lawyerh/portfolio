@@ -1,0 +1,32 @@
+.contact {
+
+    &__display {
+        width: 70%;
+        height: 100%;
+        background-color: $color-primary;
+        display: inline-block;
+        border-right: 1.2rem solid $color-dark;
+        text-align: center;
+        padding: 5rem 0;
+
+        @include respond(tab-port) {
+            width: 100%;
+            border: none;
+            padding: 8rem 0 5rem 0;
+        }
+
+        @include respond(phone) {
+            padding: 12rem 0 5rem 0;
+        }
+
+    }
+
+    &__header {
+        margin-bottom: 2rem;
+    }
+
+        
+
+
+
+}

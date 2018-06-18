@@ -5,9 +5,12 @@ import { createStore, applyMiddleware } from "redux";
 import { BrowserRouter, Route, Switch } from "react-router-dom";
 import promise from "redux-promise";
 
+import RootReducer from "./reducers/index";
+
 import './master.css';
 
 import About from "./components/about";
+import Contact from "./components/contact";
 import Technologies from "./components/tech";
 import Resume from "./components/resume";
 
@@ -17,13 +20,16 @@ const createStoreWithMiddleware = applyMiddleware(promise)(createStore);
 
 ReactDOM.render(
         <div>
-            <BrowserRouter>
-                <Switch>
-                    <Route path="/tech" component={Technologies} />
-                    <Route path="/resume" component={Resume} />
-                    <Route path="/" component={About} />
-                </Switch>
-            </BrowserRouter>
+            <Provider store={createStoreWithMiddleware(RootReducer)}>
+                <BrowserRouter>
+                    <Switch>
+                        <Route path="/contact" component={Contact} />
+                        <Route path="/tech" component={Technologies} />
+                        <Route path="/resume" component={Resume} />
+                        <Route path="/" component={About} />
+                    </Switch>
+                </BrowserRouter>
+            </Provider>
         </div>
     , document.getElementById('root'));
 

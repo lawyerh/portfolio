@@ -12,31 +12,34 @@
     }
 
     &__header-background {
-        // background-image: url("./img/seattle.jpg");
         background-image: linear-gradient(to right, rgba($color-dark, .2), rgba($color-dark, .2)), url("./img/seattle.jpg");
         background-size: cover;
         background-position-y: center;
-        padding: 10rem;
+        padding: 10rem 0;
         border-bottom: .6rem solid $color-dark;
-        
+        height: 50%;
+        position: relative;
 
         @include respond(tab-land) {
             background-position-y: top;
         }
+
     }
 
     &__header {
-        text-align: center;
-        margin-top: 5rem;
-
-        // @include respond (tab-port) {
-        //     margin-top: 15rem;
-        // }
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
     }
 
     &__title {
+        position: absolute;
+        top: 70%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        width: 100%;
         text-align: center;
-        margin-top: 1rem;
     }
 
     &__info {

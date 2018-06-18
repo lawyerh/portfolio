@@ -87,6 +87,8 @@
         left: 50%;
         transform: translate(-50%, -50%);
         font-size: inherit;
+        width: 100%;
+        text-align: center;
         color: $color-white;
     }
 }

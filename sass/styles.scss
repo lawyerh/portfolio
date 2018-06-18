@@ -3,10 +3,13 @@
 @import "base/base";
 @import "base/typography";
 
+@import "components/form";
+
 @import "layout/grid";
 @import "layout/nav-grid";
 @import "layout/nav-bar";
 
 @import "pages/about";
+@import "pages/contact";
 @import "pages/resume";
 @import "pages/tech";
