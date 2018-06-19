@@ -3,7 +3,10 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
+    "axios": "^0.18.0",
+    "body-parser": "^1.18.3",
     "node-sass": "^4.9.0",
+    "nodemailer": "^4.6.7",
     "react": "^16.4.0",
     "react-dom": "^16.4.0",
     "react-scripts": "1.1.4",
@@ -18,6 +21,7 @@
     "compile:sass": "node-sass sass/styles.scss src/master.css -w"
   },
   "devDependencies": {
+    "express": "^4.16.3",
     "react-redux": "^5.0.7",
     "react-router-dom": "^4.3.1",
     "redux": "^4.0.0"

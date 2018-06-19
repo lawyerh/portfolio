@@ -3,6 +3,7 @@ import React from "react";
 function TextInput(field) {
         return (
             <div className="form__group">
+                
                 <input 
                 type="text" 
                 name={field.name}

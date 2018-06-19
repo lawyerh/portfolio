@@ -1,5 +1,6 @@
 import React, { Component } from "react";
 import { reduxForm, Field } from "redux-form";
+import axios from "axios";
 
 import NavBar from "./nav-bar";
 import NavGrid from "./nav-grid";
@@ -7,7 +8,26 @@ import NavGrid from "./nav-grid";
 import TextInput from "./form/text-input";
 import TextAreaInput from "./form/textArea-input";
 
+
+
+
 class Contact extends Component {
+
+    onSubmit(values) {
+        console.log(values);
+        axios.post('/sendMail', values, (err, response) => {
+            if(err) {
+                console.log(err);
+            }
+
+            else {
+                console.log(response);
+            }
+        });
+
+
+    }
+
     render(){
         const { handleSubmit } = this.props;
 
@@ -23,13 +43,15 @@ class Contact extends Component {
                                 Get in touch.
                             </h2>
 
-                            <form action="" className="form">
+                            <form onSubmit={handleSubmit(this.onSubmit.bind(this))} className="form">
                                 
                                 <Field name="name" placeholder="Name" component={TextInput} />
 
                                 <Field name="email" placeholder="Your Email Address" component={TextInput} />
 
                                 <Field name="comments" placeholder="Comments or inquiries" component={TextAreaInput} />
+
+                                <button type='submit' className='form__submit'>Send</button>
                             
                             </form>
 

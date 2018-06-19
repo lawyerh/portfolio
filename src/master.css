@@ -68,10 +68,40 @@ body {
   height: 10rem; }
 
 .form__placeholder {
+  font-family: "Karla";
+  transition: all .2s ease-in;
   display: block;
+  width: 50%;
   color: #bfbfbf;
+  background-color: #131313;
+  border-radius: .5rem;
   font-size: 1.6rem;
-  margin: 1rem; }
+  font-weight: 700;
+  margin: 1rem auto;
+  opacity: 0; }
+
+.form__text-area:focus + .form__placeholder {
+  opacity: 1; }
+
+.form__text:focus + .form__placeholder {
+  opacity: 1; }
+
+.form__submit {
+  display: block;
+  width: 12%;
+  height: 3.5rem;
+  margin: auto;
+  font-family: "Karla";
+  font-weight: 700;
+  background-color: #131313;
+  color: #bfbfbf;
+  border: none;
+  border-radius: 1rem;
+  cursor: pointer;
+  transition: transform .1s; }
+  .form__submit:hover {
+    box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.1);
+    transform: scale(1.02); }
 
 .row {
   max-width: 114rem;
