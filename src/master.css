@@ -363,6 +363,74 @@ body {
   padding: .8rem;
   background-color: #131313; }
 
+.project {
+  background: linear-gradient(to bottom right, #004a8e, #00284b);
+  padding: 3rem; }
+  .project__body {
+    padding: 3rem;
+    border-bottom: 1px solid #131313; }
+  .project__image {
+    display: inline-block;
+    width: 50%; }
+    @media (max-width: 56.25em) {
+      .project__image {
+        display: block;
+        margin: 0 auto;
+        width: 80%;
+        height: auto; } }
+    @media (max-width: 37.5em) {
+      .project__image {
+        margin: 0 auto;
+        margin-top: 5rem; } }
+  .project__info-box {
+    display: inline-block;
+    vertical-align: top;
+    padding: 3rem;
+    width: 40%; }
+    @media (max-width: 56.25em) {
+      .project__info-box {
+        display: block;
+        width: 50%;
+        margin: auto;
+        text-align: center; } }
+  .project__title {
+    margin-bottom: .5rem;
+    border-bottom: 1px solid black;
+    padding: .5rem; }
+  .project__description {
+    line-height: 1.6rem;
+    font-size: 1.4rem; }
+  .project__tech-list {
+    font-family: "Josefin Sans";
+    margin-top: 1rem;
+    color: #bfbfbf;
+    font-size: 1.6rem;
+    font-weight: 700; }
+    .project__tech-list li {
+      font-weight: 400;
+      list-style: none;
+      font-size: 1.2rem;
+      margin: .3rem;
+      margin-left: 3rem; }
+      @media (max-width: 56.25em) {
+        .project__tech-list li {
+          margin-left: 0;
+          margin: .5rem 0; } }
+
+.portfolio {
+  text-align: center;
+  padding: 5rem 0; }
+  .portfolio__tech {
+    font-family: "Josefin Sans";
+    margin-top: 1rem;
+    color: #bfbfbf;
+    font-size: 1.6rem;
+    font-weight: 700; }
+    .portfolio__tech li {
+      font-weight: 400;
+      margin: .5rem 0;
+      list-style: none; }
+
 .resume {
   position: relative;
   width: 100%;
