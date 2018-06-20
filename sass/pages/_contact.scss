@@ -3,7 +3,8 @@
     &__display {
         width: 70%;
         height: 100%;
-        background-color: $color-primary;
+        background-size: cover;
+        background-image: linear-gradient(to right, rgba($color-primary, .4), rgba($color-primary, .4)), url("./img/desk.jpg");
         display: inline-block;
         border-right: 1.2rem solid $color-dark;
         text-align: center;
@@ -22,7 +23,13 @@
     }
 
     &__header {
+        margin: auto;
         margin-bottom: 2rem;
+        color: $color-white;
+        width: 50%;
+        border-radius: .5rem;
+        padding: .8rem;
+        background-color: $color-dark;
     }
 
         

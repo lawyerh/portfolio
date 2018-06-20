@@ -52,6 +52,10 @@ body {
   body h3 {
     font-size: 2.8rem; }
 
+@media (max-width: 37.5em) {
+  .form__group {
+    margin-bottom: 5rem; } }
+
 .form__text {
   font-family: "Karla";
   width: 50%;
@@ -102,6 +106,11 @@ body {
   .form__submit:hover {
     box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.1);
     transform: scale(1.02); }
+  @media (max-width: 56.25em) {
+    .form__submit {
+      height: 10rem;
+      width: 30%;
+      font-size: 3.5rem; } }
 
 .row {
   max-width: 114rem;
@@ -231,6 +240,38 @@ body {
     .navbar__link:hover, .navbar__link:active {
       color: #ff8832; }
 
+.navbar-const {
+  z-index: 1000;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: #003d74;
+  border-radius: 3px;
+  border-bottom: 1px dashed #131313;
+  padding: .5rem;
+  text-align: center; }
+  .navbar-const__brand {
+    display: inline-block;
+    color: #bfbfbf; }
+    @media (max-width: 37.5em) {
+      .navbar-const__brand {
+        display: block;
+        margin: 1rem; } }
+  .navbar-const__link {
+    display: inline-block;
+    text-decoration: none;
+    font-family: 'Karla';
+    margin-left: 3rem; }
+    @media (max-width: 37.5em) {
+      .navbar-const__link {
+        margin-left: 1.8rem; } }
+    .navbar-const__link:link, .navbar-const__link:visited {
+      color: #bfbfbf;
+      font-size: 3rem; }
+    .navbar-const__link:hover, .navbar-const__link:active {
+      color: #ff8832; }
+
 .about-display {
   width: 70%;
   height: 100%;
@@ -298,7 +339,8 @@ body {
 .contact__display {
   width: 70%;
   height: 100%;
-  background-color: #003d74;
+  background-size: cover;
+  background-image: linear-gradient(to right, rgba(0, 61, 116, 0.4), rgba(0, 61, 116, 0.4)), url("./img/desk.jpg");
   display: inline-block;
   border-right: 1.2rem solid #131313;
   text-align: center;
@@ -313,7 +355,13 @@ body {
       padding: 12rem 0 5rem 0; } }
 
 .contact__header {
-  margin-bottom: 2rem; }
+  margin: auto;
+  margin-bottom: 2rem;
+  color: #bfbfbf;
+  width: 50%;
+  border-radius: .5rem;
+  padding: .8rem;
+  background-color: #131313; }
 
 .resume {
   position: relative;

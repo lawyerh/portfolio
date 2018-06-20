@@ -1,0 +1,47 @@
+.navbar-const {
+    z-index: 1000;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: $color-primary;
+    border-radius: 3px;
+    border-bottom: 1px dashed $color-dark;
+    padding: .5rem;
+    text-align: center;
+    
+
+    &__brand {
+        display: inline-block;
+        color: $color-white;
+        @include respond(phone) {
+            display: block;
+            margin: 1rem;
+        }
+
+    }
+
+    &__link {
+        display: inline-block;
+        text-decoration: none;
+        font-family: 'Karla';
+        margin-left: 3rem;
+
+        @include respond(phone){
+            margin-left: 1.8rem;
+        }
+        
+        
+
+        &:link,
+        &:visited {
+            color: $color-white;
+            font-size: 3rem;
+        }
+
+        &:hover,
+        &:active {
+            color: $color-javascript;
+        }
+    }
+}

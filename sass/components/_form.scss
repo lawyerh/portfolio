@@ -1,8 +1,10 @@
 .form {
 
-    // &__group {
-    //     text-align: center;   
-    // }
+    &__group {
+        @include respond(phone) {
+            margin-bottom: 5rem;
+        }   
+    }
 
     &__text {
         font-family: "Karla";
@@ -61,6 +63,12 @@
         &:hover {
             box-shadow: 0 1rem 2rem rgba($color: #000000, $alpha: .1);
             transform: scale(1.02);
+        }
+
+        @include respond(tab-port) {
+            height: 10rem;
+            width: 30%;
+            font-size: 3.5rem;
         }
     }
 
