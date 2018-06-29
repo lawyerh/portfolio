@@ -308,9 +308,12 @@ body {
     text-align: center; }
   .about-display__info {
     padding: 0 5rem; }
+    @media (max-width: 75em) {
+      .about-display__info {
+        margin-top: 6rem; } }
     @media (min-width: 112.5em) {
       .about-display__info {
-        margin-top: 10rem; } }
+        margin-top: 8rem; } }
   .about-display__about {
     width: 100%; }
     @media (max-width: 56.25em) {

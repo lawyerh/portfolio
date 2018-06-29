@@ -44,8 +44,13 @@
 
     &__info {
         padding: 0 5rem;
+
+        @include respond(tab-land){
+            margin-top: 6rem;
+        }
+
         @include respond(big-desktop) {
-            margin-top: 10rem;
+            margin-top: 8rem;
         }
     }
 
