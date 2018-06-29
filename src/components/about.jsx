@@ -41,7 +41,7 @@ class About extends Component {
                                     </p>
 
                                     <p className="about-display__text">
-                                        Currently seeking new opportunities.
+                                        Currently an Assistant Instructor for evening coding classes at the University of Washington. Seeking full-time opportunities.
                                     </p>
 
                                     <p className="about-display__text">
